@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_dotenv/flutter_dotenv.dart';
-import 'screens/home_screen.dart';
+import 'screens/splash_screen.dart';
 
 final themeNotifier = ValueNotifier<ThemeMode>(ThemeMode.light);
 
@@ -30,7 +30,7 @@ class DsaSimplifierApp extends StatelessWidget {
           themeMode: mode,
           theme: _lightTheme(),
           darkTheme: _darkTheme(),
-          home: const HomeScreen(),
+          home: const SplashScreen(),
         );
       },
     );
